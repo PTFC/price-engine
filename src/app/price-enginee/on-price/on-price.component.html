@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-6">
+    <div class="text-center">ASK</div>
+    <div class="text-center" *ngFor="let ask of datas.asks">
+      <span class="m-lg-3">{{ask[0]}}</span>
+      <span>{{ask[1]}}</span>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="text-center">BID</div>
+    <div class="text-center" *ngFor="let bid of datas.bids">
+      <span class="m-lg-3">{{bid[0]}}</span>
+      <span>{{bid[1]}}</span>
+    </div>
+  </div>
+</div>

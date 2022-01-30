@@ -1,0 +1,23 @@
+<div class="section-price">
+  <div class="row">
+    <div class="col text-center fs-6">
+      Price Enginee
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="action-group {{(taskSelected == item) ? 'active' : ''}}" *ngFor="let item of tasks">
+        <button (click)="onChangeTab(item)"
+        >{{item.name}}</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col" *ngIf="taskSelected == tasks[0]">
+      <app-get-price></app-get-price>
+    </div>
+    <div class="col" *ngIf="taskSelected == tasks[1]">
+      <app-on-price></app-on-price>
+    </div>
+  </div>
+</div>
